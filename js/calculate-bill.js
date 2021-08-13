@@ -34,8 +34,10 @@ const billStringElement = document.querySelector(".billString");
    
 //create the function that will be called when the calculate button is pressed
 
-    calculateBtn.addEventListener('click', calculateBtnClicked);
-
+    function calculateBtnClicked(){
+    // logic goes here
+        calculateBtnClicked.addEventListener('click', calculateBtnClicked);
+    } 
 
 //  * this function should read the string value entered - split it on a comma.
 
@@ -54,4 +56,7 @@ const billStringElement = document.querySelector(".billString");
 
 //link the function to a click event on the calculate button
 
-    calculateBtn.addEventListener('click', calculateBtnClicked);
+    function calculateBtnClicked(){
+    // logic goes here
+        calculateBtnClicked.addEventListener('click', calculateBtnClicked);
+    }
