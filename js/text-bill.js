@@ -11,7 +11,7 @@
 
 
 //get a reference to the add button
-    textTotalAddBtn.addEventListener('click', textBillTotal);
+  
 
 //create a variable that will keep track of the total bill
 function textBillTotal(){
@@ -32,7 +32,7 @@ function textBillTotal(){
     totalCostElem.innerHTML = totalCost.toFixed(2);
     }
 
-    textTotalAddBtn.addEventListener('click', textBillTotal);
+    
 
 //add an event listener for when the add button is pressed
 
