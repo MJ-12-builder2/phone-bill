@@ -32,12 +32,11 @@ function textBillTotal(){
     totalCostElem.innerHTML = totalCost.toFixed(2);
     }
 
-    
-
 //add an event listener for when the add button is pressed
 
 //in the event listener check if the value in the bill type textbox is 'sms' or 'call'
 // * add the appropriate value to the running total
+
 // * add nothing for invalid values that is not 'call' or 'sms'.
 // * display the latest total on the screen
     function textBillTotal(){
@@ -59,3 +58,4 @@ function textBillTotal(){
         totalCostElem.classList.add("warning");
     }
     }
+    
