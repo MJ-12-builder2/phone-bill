@@ -40,8 +40,10 @@ const billStringElement = document.querySelector(".billString");
     } 
 
 //  * this function should read the string value entered - split it on a comma.
-
-
+    function calculateBtnClicked(){
+    // logic goes here
+        calculateBtnClicked.addEventListener('click', calculateBtnClicked);
+    } 
 
 
 //  * loop over all the entries in the the resulting list
