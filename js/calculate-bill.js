@@ -20,18 +20,20 @@
    
 //link the function to a click event on the calculate button
 
-    const calculateBtnElement = document.querySelector(".calculateBtn");
-    const billTotalElement = document.querySelector(".billTotal");
-    const billStringElement = document.querySelector(".billString");
+    var calculateBtnElement = document.querySelector(".calculateBtn");
+    var billTotalElement = document.querySelector(".billTotal");
+    var billStringElement = document.querySelector(".billString");
 
+    // function calculateBtnClicked(){
+    //     // logic goes here
+    //     calculateBtn.addEventListener('click', calculateBtnClicked);
+    // }
+    
+    
     function calculateBtnClicked(){
-        // logic goes here
+
         calculateBtn.addEventListener('click', calculateBtnClicked);
-    }
-    
-    
-    function calculateBtnClicked(){
-        // get the string entered in the textArea
+        
         var billString = billStringElement.value;
         //split the string
         var billItems = billString.split(",");
@@ -48,7 +50,6 @@
             }
         }
         
-        //round to two decimals
         var roundedBillTotal = billTotal.toFixed(2);
         billTotalElement.innerHTML = roundedBillTotal;
     }
