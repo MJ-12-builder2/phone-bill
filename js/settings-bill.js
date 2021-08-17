@@ -11,6 +11,10 @@
 //get a reference to the 'Update settings' button
 
 // create a variables that will keep track of all the settings
+    callsTotalElem.innerHTML = callsTotal.toFixed(2);
+    smsTotalElem.innerHTML = smsTotal.toFixed(2);
+    var totalCost = callsTotal + smsTotal;
+    totalCostElem.innerHTML = totalCost.toFixed(2);
 
 // create a variables that will keep track of all three totals.
 function textBillTotal(){
