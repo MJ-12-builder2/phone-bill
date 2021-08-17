@@ -6,7 +6,7 @@
         var callsTotal = 0;
         var smsTotal = 0;
     //check if it is a 'call' or 'sms',
-    if (billTypeTextElement === "bill"){
+    if (billTypeTextElement === "call"){
         callsTotal += 2.75
     }
     else if (billTypeTextElement === "sms"){
@@ -41,7 +41,7 @@
         // get the value entered in the billType textfield
     var billTypeEntered = billTypeText.value.trim();
         // update the correct total
-    if (billTypeEntered === "bill"){
+    if (billTypeEntered === "call"){
         callsTotal += 2.75
     }
     else if (billTypeEntered === "sms"){
@@ -59,7 +59,7 @@
         var callsTotal = 0;
         var smsTotal = 0;
     //check if it is a 'call' or 'sms',
-        if (billTypeTextElement === "bill"){
+        if (billTypeTextElement === "call"){
         callsTotal += 2.75
     }
         else if (billTypeTextElement === "sms"){

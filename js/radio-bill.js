@@ -1,11 +1,18 @@
 // get a reference to the sms or call radio buttons
-    var checkedRadioBtn = document.querySelector("input[name='billItemType']:checked");
+    var checkedRadionBtn = document.querySelector("input[name='billItemType']:checked");
         if (checkedRadioBtn){
     var billItemType = checkedRadioBtn.value
     // billItemType will be 'call' or 'sms'
     }
 //get a reference to the add button
-
+    var callsTotal = 0;
+    var smsTotal = 0;
+    //check if it is a 'call' or 'sms',
+    if (checkedRadionBtn === "bill"){
+    callsTotal += 2.75
+    }
+    else if (checkedRadionBtn === "sms"){
+    smsTotal += 0.75;
 //create a variable that will keep track of the total bill
     function textBillTotal(){
         // get the value entered in the billType textfield
@@ -27,4 +34,4 @@
 // * add the appropriate value to the running total
 // * add nothing for invalid values that is not 'call' or 'sms'.
 // * display the latest total on the screen
-    
+    }
